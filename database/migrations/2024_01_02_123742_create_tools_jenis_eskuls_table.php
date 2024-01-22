@@ -12,7 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tools_jenis_eskuls', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_eskul', 15)->primary();
+            $table->string('nama_eskul', 100);
+            $table->enum('jenis_eskul', ['Wajib', 'Pilihan']);
             $table->timestamps();
         });
     }

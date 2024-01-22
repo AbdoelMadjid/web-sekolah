@@ -7,10 +7,6 @@
     <link href="/website/assets/plugins/slider.revolution.v5/css/pack.css" rel="stylesheet" type="text/css" />
     <link href="/website/assets/plugins/slider.revolution.v5/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet"
         type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet"
-        type="text/css" media="all" />
-    <link href="http://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" property="stylesheet" type="text/css"
-        media="all">
 @endsection
 
 @section('content-web')
@@ -223,8 +219,8 @@
     <section class="services">
         <div class="container">
             <!--
-             LTR INFO: box-icon-left or box-icon-right - are the same on LTR
-             -->
+                 LTR INFO: box-icon-left or box-icon-right - are the same on LTR
+                 -->
             <div class="row">
 
                 <div class="col-sm-4">
@@ -600,13 +596,13 @@
     <section class="bb-0">
 
         <!--
-                         Available Classes/Colors
-                          .cart-visual-warning
-                          .cart-visual-info
-                          .cart-visual-success
-                          .cart-visual-danger
-                          .cart-visual-default
-                        -->
+                             Available Classes/Colors
+                              .cart-visual-warning
+                              .cart-visual-info
+                              .cart-visual-success
+                              .cart-visual-danger
+                              .cart-visual-default
+                            -->
         <div class="clearfix mt-60 cart-visual cart-visual-warning">
 
             <svg id="cart-visual-svg-1" height="0" width="100%" preserveAspectRatio="none" version="1.1"

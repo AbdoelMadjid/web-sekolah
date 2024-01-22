@@ -5,7 +5,7 @@
 @endsection
 
 @section('content-web')
-    @include('website.inc.page_title', ['bc_1' => 'My Schools'])
+    @include('website.inc.page_title', ['bc_1' => 'Kepegawaian'])
 
     <section>
         <div class="container">

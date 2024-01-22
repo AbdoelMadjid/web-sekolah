@@ -1,5 +1,6 @@
+"use strict";
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".js-bootbox-alert-smartadmin").forEach(function(elem) {
+    document.querySelectorAll("#ya-atau-tidak").forEach(function(elem) {
         elem.addEventListener("click", function(event) {
             event.preventDefault(); // Mencegah perilaku default
 
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var title = elem.getAttribute("data-title");
             var message = elem.getAttribute("data-message");
             //var confirmUrl = elem.getAttribute("data-confirm-url");
-            var autoRedirectUrl = elem.getAttribute("data-auto-redirect-url");
+            var redirectUrl = elem.getAttribute("data-redirect-url");
             var secondsLeft = 10; // Waktu dalam detik
 
             // Fungsi untuk memperbarui tampilan timer
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if (secondsLeft < 0) {
                     clearTimeout(autoRedirectTimer);
-                    window.location.href = autoRedirectUrl; // Lakukan perpindahan otomatis di sini jika diperlukan
+                    window.location.href = redirectUrl; // Lakukan perpindahan otomatis di sini jika diperlukan
                 }
             }
 
@@ -28,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Konfigurasi untuk bootbox
             bootbox.confirm({
-                title: "<i class='fal fa-times-circle text-danger mr-2'></i> <span class='text-danger fw-300'><strong>"+title+"</strong></span>",
-                message: "<span class='text-danger fw-900 font-italic'>Peringatan: </span><strong>"+message+"</strong><br><br> <span class='text-info fw-300 font-italic fs-nano' id='timer-display'></span>",
+                title: "<i class='fal fa-times-circle text-primary mr-2'></i> <span class='text-primary fw-300'><strong>"+title+"</strong></span>",
+                message: "<span class='fw-900 font-italic'>Pertanyaan: </span><strong>"+message+"</strong><br><br> <span class='text-info fw-300 font-italic fs-nano' id='timer-display'></span>",
                 buttons: {
                     confirm: {
                         label: 'Ya',
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     clearInterval(timerInterval); // Hentikan update timer
                     clearTimeout(autoRedirectTimer); // Batalkan timer saat tombol diklik
                     if (result) {
-                        window.location.href = autoRedirectUrl; // Gunakan URL dinamis
+                        window.location.href = redirectUrl; // Gunakan URL dinamis
                     } else {
                         console.log("Action cancelled.");
                     }
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Timer untuk redirect otomatis
             var autoRedirectTimer = setTimeout(function() {
                 clearInterval(timerInterval); // Hentikan update timer
-                window.location.href = autoRedirectUrl; // Gunakan URL dinamis
+                window.location.href = redirectUrl; // Gunakan URL dinamis
             }, secondsLeft * 1000); // Convert detik menjadi milidetik
         });
     });

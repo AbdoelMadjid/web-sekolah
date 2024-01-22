@@ -7,7 +7,9 @@
         <h1>@yield('title', 'My App')</h1>
         <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
-            <li><a href="#">{{ $bc_1 }}</a></li>
+            @isset($bc_1)
+                <li><a href="#">{{ $bc_1 }}</a></li>
+            @endisset
             <li class="active">@yield('title', 'My App')</li>
         </ol>
 

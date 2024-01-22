@@ -12,7 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tools_profil_aplikasis', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_profil')->primary();
+            $table->string('app_nama');
+            $table->text('app_deskripsi');
+            $table->year('app_tahun');
+            $table->string('app_pengembang');
+            $table->string('app_icon');
+            $table->string('app_logo');
             $table->timestamps();
         });
     }

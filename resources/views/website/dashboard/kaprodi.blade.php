@@ -9,39 +9,7 @@
 @endsection
 
 @section('content-web')
-    @include('website.inc.page_title', ['bc_1' => 'My Schools'])
-    <!--
-               PAGE HEADER
-
-               CLASSES:
-                .page-header-xs	= 20px margins
-                .page-header-md	= 50px margins
-                .page-header-lg	= 80px margins
-                .page-header-xlg= 130px margins
-                .dark			= dark page header
-
-              -->
-    <section class="page-header page-header-xs mt-60">
-        <div class="container">
-
-            <h1>Shop Category</h1>
-            <span class="fs-18 fw-300"><em>Optional category subtitle / slogan</em></span>
-
-            <!-- breadcrumbs -->
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="active">Category</li>
-            </ol><!-- /breadcrumbs -->
-
-        </div>
-    </section>
-    <!-- /PAGE HEADER -->
-
-
-
-
-
-
+    @include('website.inc.page_title', ['bc_1' => 'Kepegawaian'])
 
     <!-- wrapper -->
     <div id="wrapper">

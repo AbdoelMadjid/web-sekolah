@@ -734,7 +734,8 @@
                                 <br>
                                 <br>
                                 <div class="d-flex d-column align-items-start mb-3">
-                                    <img src="img/logo.png" alt="SmartAdmin WebApp" class="mr-3 mt-1">
+                                    <img src="/admin/img/{{ $profileApp->app_logo ?? '' }}"
+                                        alt="{{ $profileApp->app_nama ?? '' }} WebApp" class="mr-3 mt-1">
                                     <div class="border-left pl-3">
                                         <span class="fw-500 fs-lg d-block l-h-n">Dr. Codex Lantern</span>
                                         <span class="fw-400 fs-nano d-block l-h-n mb-1">Orthopedic

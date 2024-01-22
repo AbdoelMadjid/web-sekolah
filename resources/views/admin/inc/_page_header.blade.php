@@ -3,7 +3,8 @@
     <div class="page-logo">
         <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative"
             data-toggle="modal" data-target="#modal-shortcut">
-            <img src="/admin/img/logo.png" alt="{{ $profileApp->app_nama ?? '' }} WebApp" aria-roledescription="logo">
+            <img src="/admin/img/{{ $profileApp->app_logo ?? '' }}" alt="{{ $profileApp->app_nama ?? '' }} WebApp"
+                aria-roledescription="logo">
             <span class="page-logo-text mr-1">{{ $profileApp->app_nama ?? '' }} WebApp</span>
             <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
             <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
@@ -54,6 +55,7 @@
                 <i class="fal fa-search"></i>
             </a>
         </div>
+
         @foreach (App\Helpers\Fitures::getFiturAktif() as $fiturView)
             @include($fiturView)
         @endforeach

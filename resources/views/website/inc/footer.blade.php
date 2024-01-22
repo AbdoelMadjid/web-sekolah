@@ -53,9 +53,9 @@
 
                 <!-- Social Icons -->
                 <div class="mt-20">
-                    <a href="#" class="social-icon social-icon-border social-facebook float-left"
-                        data-toggle="tooltip" data-placement="top" title="Facebook">
-
+                    <a href="https://www.facebook.com/abdulmadjid.mpd"
+                        class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip"
+                        data-placement="top" title="Facebook" target="_blank">
                         <i class="icon-facebook"></i>
                         <i class="icon-facebook"></i>
                     </a>
@@ -91,6 +91,109 @@
             <div class="col-md-3">
                 <h4 class="letter-spacing-1">TEAM SOLID</h4>
                 <p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+
+                <div class="owl-carousel buttons-autohide controlls-over"
+                    data-plugin-options='{"singleItem": false, "items": "1", "autoPlay": 2700, "navigation": false, "pagination": false}'>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/madjid.jpg" width="120" height="120"
+                            alt="" />
+                        <br><br>
+                        <cite>
+                            Abdul Madjid, S.Pd., M.Pd. <br>
+                            <span class='small'>Programming & Scripting</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/aryono.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Aryono, ST <br>
+                            <span class='small'>Database Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/redy.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Redy Firmansyah, S.Kom <br>
+                            <span class='small'>End-User Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/deny2.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Deni Krisdianto, M.T <br>
+                            <span class='small'>Style Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/ramdani.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Ramdani TS, S.T <br>
+                            <span class='small'>Review & Feed-back Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/otong.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Otong Sunahdi, S.T <br>
+                            <span class='small'>Nettworking Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/zaenal.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            M. Zaenal Iskandar S., S.Kom<br>
+                            <span class='small'>Nettworking Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/endik.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Endik Casdi, S.Kom<br>
+                            <span class='small'>Database Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/dedenita.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Dede Nita, ST <br>
+                            <span class='small'>End-User Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/ridwan.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Endang Ridwan, S.Kom. <br>
+                            <span class='small'>Style Management</span>
+                        </cite>
+                    </div>
+                    <div class="footer-gallery lightbox">
+                        <img class="rounded" src="/website/team/feby.png" width="120" height="120"
+                            alt="" />
+                        <br>
+                        <cite>
+                            Febby Muchamad Darmadi, ST<br>
+                            <span class='small'>Review & Feed-back Management</span>
+                        </cite>
+                    </div>
+                </div>
             </div>
 
         </div>

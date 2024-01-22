@@ -16,74 +16,124 @@
             ])
             @endcomponent
         </div>
-        <div id="panel-1" class="panel">
-            <div class="panel-hdr">
-                <h2>
-                    <i class="fal fa-check text-success mr-2"></i> Default <span class="fw-300"><i>Panel</i></span>
-                </h2>
-                <div class="panel-toolbar">
-                    <select class="custom-select custom-select-sm">
-                        <option selected="">Select</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="panel-toolbar ml-2">
-                    <div class="d-flex position-relative ml-auto" style="max-width: 8rem;">
-                        <i class="fal fa-search position-absolute pos-left fs-lg px-2 py-1 mt-1 fs-xs"></i>
-                        <input type="text" class="form-control form-control-sm pl-5" placeholder="Search">
+        <div class="row">
+            <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
+                <div class="card mb-g">
+                    <div class="row row-grid no-gutters">
+                        <div class="col-12">
+                            <div class="p-3 d-flex text-primary align-items-center fs-xl">
+                                Tahun Ajaran
+                                <span class="ml-auto">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-icon fs-xl width-1 mr-1" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fal fa-ellipsis-v-alt color-fusion-300"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3">
+                                <div class="frame-wrap">
+                                    <table class="table table-sm m-0">
+                                        <thead class="bg-primary-500">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="pl-4 pt-3 pr-4 pb-0">
+                                <div class="height-8 d-flex flex-row align-items-center flex-wrap flex-shrink-0">
+                                    sdfasdfasdf avs dfasdf s
+                                    <span class=" ml-auto">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="panel-container show">
-                <div class="panel-content">
-                    <p class="mb-g">
-                        Your privacy is important to us at SmartAdmin and the protection, confidentiality and integrity of
-                        your
-                        personal data are our prime concerns.
-                        We will only use your personal information to administer your account, provide the products and
-                        services
-                        you
-                        have requested from us, and to keep you informed about our products and services (if you have
-                        consented
-                        to
-                        this).
-                        We only use your data for the purposes for which it was collected and, where relevant, to meet local
-                        legal
-                        obligations.
-                        We will retain your personal information only for as long as is necessary for the purposes for which
-                        the
-                        information was collected, or as long as is required pursuant to law.
-                    </p>
-                    <p>
-                        We collect certain data through cookies and similar technologies (e.g. web beacons, tags, device
-                        identifiers). Cookies are text files placed on your computer to collect standard internet log
-                        information
-                        and visitor behaviour information. This information is used to track visitor use of the website and
-                        to
-                        compile statistical reports on website activity. We register your interaction with our services in
-                        order
-                        to
-                        improve our website, content and services. Our use of such technologies and the data collected is
-                        described
-                        in more detail in our Cookie Policy. You can manage your cookie preferences through your browser
-                        settings.
-                    </p>
-
-                </div>
-                <!-- panel footer with utility classes -->
-                <div
-                    class="panel-content d-flex py-2 rounded-bottom border-faded border-left-0 border-right-0 border-bottom-0 text-muted">
-
-                    <button class="btn btn-sm btn-primary ml-auto mr-2 js-bootbox-alert" data-title="Tambah data siswa"
-                        data-message="Sukses tersimpan!" data-redirect-url="/docs_general">
-                        <i class="fal fa-save"></i> Save
-                    </button>
-                    <button class="btn btn-sm btn-primary js-bootbox-alert-smartadmin" data-title="Konfirmasi"
-                        data-message="Apakah Anda yakin data ini akan dihapus?" data-auto-redirect-url="/">
-                        <i class="fal fa-trash-alt"></i> Delete
-                    </button>
+            <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
+                <div class="card border mb-g">
+                    <div class="card-body pl-4 pt-4 pr-4 pb-0">
+                        <div class="d-flex flex-column">
+                            <div class="border-0 flex-1 position-relative shadow-top">
+                                <div class="pt-2 pb-1 pr-0 pl-0 rounded-0 position-relative" tabindex="-1">
+                                    <span class="profile-image rounded-circle d-block position-absolute"
+                                        style="background-image:url('/admin/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+                                    <div class="pl-5 ml-5">
+                                        <textarea class="form-control border-0 p-0 fs-xl bg-transparent" rows="4"
+                                            placeholder="What's on your mind Codex?..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="height-8 d-flex flex-row align-items-center flex-wrap flex-shrink-0">
+                                <a href="javascript:void(0);" class="btn btn-icon fs-xl width-1 mr-1" data-toggle="tooltip"
+                                    data-original-title="More options" data-placement="top">
+                                    <i class="fal fa-ellipsis-v-alt color-fusion-300"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="btn btn-icon fs-xl mr-1" data-toggle="tooltip"
+                                    data-original-title="Attach files" data-placement="top">
+                                    <i class="fal fa-paperclip color-fusion-300"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="btn btn-icon fs-xl mr-1" data-toggle="tooltip"
+                                    data-original-title="Insert photo" data-placement="top">
+                                    <i class="fal fa-camera color-fusion-300"></i>
+                                </a>
+                                <button class="btn btn-info shadow-0 ml-auto">Post</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".js-bootbox-alert").forEach(function(elem) {
+    document.querySelectorAll("#eksekusi").forEach(function(elem) {
         elem.addEventListener("click", function(event) {
             event.preventDefault(); // Mencegah perilaku default
 

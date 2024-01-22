@@ -38,16 +38,24 @@
                     </div>
                 </div>
                 <div class="panel-toolbar ml-2">
-                    <a href="#" class="btn btn-primary btn-sm" title="Kembali"><span class="hidden-xl-up"><i
-                                class="fal fa-reply"></i> </span><span class="hidden-sm-down"><span class="hidden-sm-down">
-                                Kembali </span></a>
-                    <button class="btn btn-primary btn-sm ml-2"
-                        onclick="showToast('Peringatan!','Lengkapi data yang kosong', 'warning')">Show Toast</button>
+                    <a href="#" class="btn btn-primary btn-sm" title="Kembali">
+                        <span class="hidden-xl-up"><i class="fal fa-reply"></i> </span>
+                        <span class="hidden-sm-down"> Kembali </span></a>
+                    <div class="btn-group dropleft">
+                        <button class="btn btn-icon fs-xl width-1 mr-1" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fal fa-ellipsis-v-alt color-fusion-300"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel-container show">
                 <div class="panel-content py-2 bg-faded border-faded border-top-0 border-left-0 border-right-0">
-
                     <div class="btn-group mr-2" role="group" aria-label="Group A">
                         <button type="button" class="btn btn-light btn-sm bg-white"><i class="fas fa-bold"></i></button>
                         <button type="button" class="btn btn-light btn-sm bg-white"><i class="fas fa-italic"></i></button>
@@ -75,109 +83,105 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                    {{--                     <div class="panel-tag">
-                        All panels needs to have an unique ID in order to use the panel funtions.
-                        <code>.panel</code> is a container with no padding, <code>.panel-hdr</code> has a
-                        <code>min-height</code> value and default <code>flexbox</code> properties. The
-                        <code>.panel-toolbar</code> is inserted into <code>.panel-hdr</code> for extra elements. The
-                        <code>.panel-container</code> wraps <code>.panel-content</code> which has a predefined
-                        padding.
-                    </div> --}}
                 </div>
                 <div class="panel-content">
-                    {{--                     <div class="panel-tag">
-                        All panels needs to have an unique ID in order to use the panel funtions.
-                        <code>.panel</code> is a container with no padding, <code>.panel-hdr</code> has a
-                        <code>min-height</code> value and default <code>flexbox</code> properties. The
-                        <code>.panel-toolbar</code> is inserted into <code>.panel-hdr</code> for extra elements. The
-                        <code>.panel-container</code> wraps <code>.panel-content</code> which has a predefined
-                        padding.
-                    </div> --}}
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                        </button>
-                        <div class="d-flex align-items-center">
-                            <div class="alert-icon">
-                                <i class="fal fa-exclamation-triangle"></i>
-                            </div>
-                            <div class="flex-1">
-                                <span class="h4">Medim Icon Stack</span>
-                                <br>
+                    <div class="row">
+                        <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
+                            <!-- Panggil komponen Alert untuk pesan warning -->
+                            <x-alert type="warning" title="Warning">
                                 Custom alert background with <strong>medium</strong> sized icon stack.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                        </button>
-                        <div class="d-flex align-items-center">
-                            <div class="alert-icon">
-                                <span class="icon-stack icon-stack-md">
-                                    <i class="base-7 icon-stack-3x color-danger-900"></i>
-                                    <i class="fal fa-times icon-stack-1x text-white"></i>
-                                </span>
-                            </div>
-                            <div class="flex-1">
-                                <span class="h4">Medim Icon Stack</span>
-                                <br>
+                            </x-alert>
+                            <x-alert type="info" title="Info">
                                 Custom alert background with <strong>medium</strong> sized icon stack.
-                            </div>
+                            </x-alert>
+                            <x-alert type="danger" title="Error">
+                                Custom alert background with <strong>medium</strong> sized icon stack.
+                            </x-alert>
+                            <x-alert type="success" title="Success">
+                                Custom alert background with <strong>medium</strong> sized icon stack.
+                            </x-alert>
                         </div>
-                    </div>
-                    <div class="alert alert-info alert-dismissible fade show" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                        </button>
-                        <div class="d-flex align-items-center">
-                            <div class="alert-icon mt-0">
-                                <span class="icon-stack icon-stack-md">
-                                    <i class="base-7 icon-stack-3x color-success-600"></i>
-                                    <i class="fal fa-check icon-stack-1x text-white"></i>
-                                </span>
-                            </div>
-                            <div class="flex-1">
-                                <span class="h4">Medim Icon Stack</span>
-                                <br>
-                                Custom alert background with <strong>medium</strong> sized icon stack. Your privacy is
-                                important
-                                to
-                                us at SmartAdmin and the protection, confidentiality and integrity of your
-                                personal data are our prime concerns.
-                                We will only use your personal information to administer your account, provide the products
-                                and
-                                services you
-                                have requested from us, and to keep you informed about our products and services (if you
-                                have
-                                consented to
-                                this).
-                            </div>
-                        </div>
-                    </div>
-                    <table class="table table-bordered table-hover">
-                        <tbody>
-                            <tr>
-                                <td style="width: 40%; vertical-align: middle;">
-                                    <span
-                                        class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">1</span>
-                                    Basic Alert
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="js-bootbox-alert btn btn-outline-primary"
-                                        data-title="Success!" data-message="Great... all is complete"
-                                        data-redirect-url="/docs_general">
-                                        Trigger Custom Alert
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary"
-                                        id="js-bootbox-alert-2">Try
-                                        me!</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
+                            <table class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 40%; vertical-align: middle;">
+                                            <span
+                                                class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">1</span>
+                                            Basic Alert Toast
+                                        </td>
+                                        <td>
+                                            <div class="btn-group mr-2" role="group" aria-label="Group A">
+                                                <x-toastr-notif type="warning"
+                                                    message="Terjadi Kesalahan">Warning</x-toastr-notif>
+                                                <x-toastr-notif type="error"
+                                                    message="Lengkapi data yang kosong">Error</x-toastr-notif>
+                                                <x-toastr-notif type="info"
+                                                    message="Data yang di lengkapi sudah sesuai">Info</x-toastr-notif>
+                                                <x-toastr-notif type="success"
+                                                    message="Data sukses di simpan">Success</x-toastr-notif>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40%; vertical-align: middle;">
+                                            <span
+                                                class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">2</span>
+                                            Basic Alert BootBox
+                                        </td>
+                                        <td>
+                                            <x-bootboxalert typebutton="primary" id="eksekusi"
+                                                datatitle="Tambah Data Siswa" datamessage="Sukses tersimpan!"
+                                                url="dashboard-admin" icon="save">Simpan</x-bootboxalert>
+                                            <x-bootboxalert typebutton="primary" id="ya-atau-tidak"
+                                                datatitle="Konfirmasi"
+                                                datamessage="Apakah Anda yakin data ini akan dihapus?"
+                                                url="dashboard-admin" icon="trash-alt">Hapus</x-bootboxalert>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40%; vertical-align: middle;">
+                                            <span
+                                                class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">3</span>
+                                            Modal Component
+                                        </td>
+                                        <td>
+                                            <div class="btn-group mr-2" role="group" aria-label="Group A">
+                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                    data-target="#default-example-modal-sm">Small</button>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                    data-target="#default-example-modal">Default</button>
+                                                <!-- Large modal -->
+                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                    data-target="#default-example-modal-lg">Large</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
+                            <x-modal :modalId="'default-example-modal'" :modalSize="''" :modalTitle="'Ini Modal default'" :modalSubTitle="'Contoh Modal default'"
+                                :modalAction="'Simpan'">
+                                <!-- Isi konten modal yang dinamis -->
+                                <p>Isi Modal default</p>
+                            </x-modal>
+
+                            <x-modal :modalId="'default-example-modal-sm'" :modalSize="'modal-sm'" :modalTitle="'Ini Modal small'" :modalSubTitle="'Contoh Modal small'"
+                                :modalAction="'Simpan'">
+                                <!-- Isi konten modal yang dinamis -->
+                                <p>Isi Modal small</p>
+                            </x-modal>
+
+                            <x-modal :modalId="'default-example-modal-lg'" :modalSize="'modal-lg'" :modalTitle="'Ini Modal large'" :modalSubTitle="'Contoh Modal large'"
+                                :modalAction="'Simpan'">
+                                <!-- Isi konten modal yang dinamis -->
+                                <p>Isi Modal large</p>
+                            </x-modal>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- panel footer with utility classes -->
                 <div
                     class="panel-content d-flex py-2 rounded-bottom border-faded border-left-0 border-right-0 border-bottom-0 text-muted">
@@ -185,13 +189,11 @@
                         <input type="checkbox" class="custom-control-input" id="demoCheck">
                         <label class="custom-control-label" for="demoCheck">Checkbox</label>
                     </div>
-                    <button class="btn btn-sm btn-primary ml-auto mr-2 js-bootbox-alert" data-title="Tambah data siswa"
-                        data-message="Sukses tersimpan!" data-redirect-url="/docs_general">
-                        <i class="fal fa-save"></i> Save
+                    <button class="btn btn-sm btn-primary ml-auto mr-2">
+                        <i class="fal fa-save"></i> Button 1
                     </button>
-                    <button class="btn btn-sm btn-primary js-bootbox-alert-smartadmin" data-title="Konfirmasi"
-                        data-message="Apakah Anda yakin data ini akan dihapus?" data-auto-redirect-url="/">
-                        <i class="fal fa-trash-alt"></i> Delete
+                    <button class="btn btn-sm btn-primary">
+                        <i class="fal fa-trash-alt"></i> Button 2
                     </button>
                 </div>
             </div>
