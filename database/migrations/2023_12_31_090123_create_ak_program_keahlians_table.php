@@ -12,16 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ak_program_keahlians', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('parent_id')->nullable();
-            $table->string('nama');
-            $table->string('level');
-            $table->integer('order')->default(0);
-            $table->string('singkatan');
+            $table->char('kode_program', 20)->primary();
+            $table->char('kode_bidang', 20);
+            $table->string('nama_program');
             $table->timestamps();
 
-            // Definisi foreign key untuk hubungan dengan dirinya sendiri (parent-child relationship)
-            $table->foreign('parent_id')->references('id')->on('ak_program_keahlians')->onDelete('cascade');
+            $table->foreign('kode_bidang')->references('kode_bidang')->on('ak_bidang_keahlians')->onDelete('cascade');
         });
     }
 
@@ -30,6 +26,9 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('ak_program_keahlians', function (Blueprint $table) {
+            $table->dropForeign(['kode_bidang']);
+        });
         Schema::dropIfExists('ak_program_keahlians');
     }
 };

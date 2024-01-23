@@ -15,7 +15,7 @@ return new class extends Migration
             $table->char('nis', 25)->primary();
             $table->char('nisn', 10)->nullable();
             $table->char('nik', 16)->nullable();
-            $table->char('kode_kk', 20);
+            $table->char('kode_paket', 20);
             $table->string('nama_siswa');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
@@ -33,7 +33,7 @@ return new class extends Migration
             $table->timestamps();
 
             // Tambahkan relasi biodata_siswas ke ak_konsentrasi_keahlians
-            $table->foreign('kode_kk')->references('id')->on('ak_program_keahlians')->onDelete('cascade');
+            $table->foreign('kode_paket')->references('kode_paket')->on('ak_paket_keahlians')->onDelete('cascade');
         });
     }
 
@@ -43,7 +43,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('ak_peserta_didiks', function (Blueprint $table) {
-            $table->dropForeign(['nama']);
+            $table->dropForeign(['kode_paket']);
         });
         Schema::dropIfExists('ak_peserta_didiks');
     }

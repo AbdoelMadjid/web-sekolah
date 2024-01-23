@@ -15,12 +15,12 @@ return new class extends Migration
             $table->char('id_kaprog', 15)->primary();
             $table->char('tahunmulai', 4);
             $table->char('tahunselesai', 4)->nullable();
-            $table->char('id', 20);
+            $table->char('kode_paket', 20)->nullable();
             $table->char('id_guru', 20);
             $table->timestamps();
 
             // Tambahkan relasi ms_kaprodis ke ms_konsentrasi_keahlians
-            $table->foreign('kode_kk')->references('id')->on('ak_program_keahlians')->onDelete('cascade');
+            $table->foreign('kode_paket')->references('kode_paket')->on('ak_paket_keahlians')->onDelete('cascade');
 
             // Tambahkan relasi ms_kaprodis ke ms_guru_tata_usahas
             $table->foreign('id_guru')->references('id_guru')->on('ak_guru_tata_usahas')->onDelete('cascade');
@@ -33,7 +33,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('ak_kaprodis', function (Blueprint $table) {
-            $table->dropForeign(['id']);
+            $table->dropForeign(['kode_paket']);
             $table->dropForeign(['id_guru']);
         });
         Schema::dropIfExists('ak_kaprodis');

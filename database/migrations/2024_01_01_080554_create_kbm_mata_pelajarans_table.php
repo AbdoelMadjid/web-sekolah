@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('kbm_mata_pelajarans', function (Blueprint $table) {
-            $table->id('id_mapel', 15)->primary();
+            $table->char('id_mapel', 15)->primary();
             $table->string('kode_mapel', 15)->nullable();
-            $table->foreign('kode_kk', 20);
+            $table->char('kode_paket', 20);
             $table->enum('kelompok', ['A', 'B', 'C1', 'C2', 'C3', 'M']);
             $table->integer('urut_mp');
             $table->string('kelmapel', 5);
@@ -29,7 +29,7 @@ return new class extends Migration
             $table->timestamps();
 
             // Tambahkan relasi kbm_mata_pelajaran ke ak_konsentrasi_keahlians
-            $table->foreign('kode_kk')->references('id')->on('ak_program_keahlians')->onDelete('cascade');
+            $table->foreign('kode_paket')->references('kode_paket')->on('ak_paket_keahlians')->onDelete('cascade');
         });
     }
 
@@ -39,7 +39,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('kbm_mata_pelajarans', function (Blueprint $table) {
-            $table->dropForeign(['nama']);
+            $table->dropForeign(['kode_paket']);
         });
         Schema::dropIfExists('kbm_mata_pelajarans');
     }

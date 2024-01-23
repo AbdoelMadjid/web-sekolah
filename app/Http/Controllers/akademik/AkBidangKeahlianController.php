@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\akademik;
 
 use App\Http\Controllers\Controller;
-use App\Models\AkProgramKeahlian;
-use App\Http\Requests\StoreAkProgramKeahlianRequest;
-use App\Http\Requests\UpdateAkProgramKeahlianRequest;
+use App\Models\AkBidangKeahlian;
+use App\Http\Requests\StoreAkBidangKeahlianRequest;
+use App\Http\Requests\UpdateAkBidangKeahlianRequest;
 
-class AkProgramKeahlianController extends Controller
+class AkBidangKeahlianController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +28,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreAkProgramKeahlianRequest $request)
+    public function store(StoreAkBidangKeahlianRequest $request)
     {
         //
     }
@@ -36,7 +36,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(AkProgramKeahlian $akProgramKeahlian)
+    public function show(AkBidangKeahlian $akBidangKeahlian)
     {
         //
     }
@@ -44,7 +44,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(AkProgramKeahlian $akProgramKeahlian)
+    public function edit(AkBidangKeahlian $akBidangKeahlian)
     {
         //
     }
@@ -52,7 +52,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateAkProgramKeahlianRequest $request, AkProgramKeahlian $akProgramKeahlian)
+    public function update(UpdateAkBidangKeahlianRequest $request, AkBidangKeahlian $akBidangKeahlian)
     {
         //
     }
@@ -60,7 +60,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(AkProgramKeahlian $akProgramKeahlian)
+    public function destroy(AkBidangKeahlian $akBidangKeahlian)
     {
         //
     }

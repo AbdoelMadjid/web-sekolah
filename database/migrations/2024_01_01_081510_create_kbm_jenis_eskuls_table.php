@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tools_jenis_jabatans', function (Blueprint $table) {
-            $table->id();
+        Schema::create('kbm_jenis_eskuls', function (Blueprint $table) {
+            $table->char('id_eskul', 15)->primary();
+            $table->string('nama_eskul', 100);
+            $table->enum('jenis_eskul', ['Wajib', 'Pilihan']);
             $table->timestamps();
         });
     }
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tools_jenis_jabatans');
+        Schema::dropIfExists('kbm_jenis_eskuls');
     }
 };

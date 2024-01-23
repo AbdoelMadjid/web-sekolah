@@ -21,9 +21,11 @@ class DatabaseSeeder extends Seeder
         $this->call([
             AppFiturSeeder::class,
             AppProfileSeeder::class,
-            UserSeeder::class,
+            //UserSeeder::class,
             AkTahunAjarSemesterSeeder::class,
+            AkBidangKeahlianSeeder::class,
             AkProgramKeahlianSeeder::class,
+            AkPaketKeahlianSeeder::class,
             //Tambahkan seeder lainnya jika ada
         ]);
     }

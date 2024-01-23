@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\akademik;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\AkProgramKeahlian;
-use App\Http\Requests\StoreAkProgramKeahlianRequest;
-use App\Http\Requests\UpdateAkProgramKeahlianRequest;
+use App\Models\KbmJenisEskul;
+use App\Http\Requests\StoreKbmJenisEskulRequest;
+use App\Http\Requests\UpdateKbmJenisEskulRequest;
 
-class AkProgramKeahlianController extends Controller
+class KbmJenisEskulController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +27,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreAkProgramKeahlianRequest $request)
+    public function store(StoreKbmJenisEskulRequest $request)
     {
         //
     }
@@ -36,7 +35,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(AkProgramKeahlian $akProgramKeahlian)
+    public function show(KbmJenisEskul $kbmJenisEskul)
     {
         //
     }
@@ -44,7 +43,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(AkProgramKeahlian $akProgramKeahlian)
+    public function edit(KbmJenisEskul $kbmJenisEskul)
     {
         //
     }
@@ -52,7 +51,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateAkProgramKeahlianRequest $request, AkProgramKeahlian $akProgramKeahlian)
+    public function update(UpdateKbmJenisEskulRequest $request, KbmJenisEskul $kbmJenisEskul)
     {
         //
     }
@@ -60,7 +59,7 @@ class AkProgramKeahlianController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(AkProgramKeahlian $akProgramKeahlian)
+    public function destroy(KbmJenisEskul $kbmJenisEskul)
     {
         //
     }

@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tools_jenis_jabatans', function (Blueprint $table) {
-            $table->id();
+        Schema::create('ak_bidang_keahlians', function (Blueprint $table) {
+            $table->char('kode_bidang', 20)->primary();
+            $table->string('nama_bidang');
             $table->timestamps();
         });
     }
@@ -22,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tools_jenis_jabatans');
+        Schema::dropIfExists('ak_bidang_keahlians');
     }
 };
