@@ -38,9 +38,8 @@
                     </div>
                 </div>
                 <div class="panel-toolbar ml-2">
-                    <a href="#" class="btn btn-primary btn-sm" title="Kembali">
-                        <span class="hidden-xl-up"><i class="fal fa-reply"></i> </span>
-                        <span class="hidden-sm-down"> Kembali </span></a>
+                    <x-button-dynamic-link url="#" title="Kembali" style="btn-danger"
+                        iconClass="fas fa-arrow-left" />
                     <div class="btn-group dropleft">
                         <button class="btn btn-icon fs-xl width-1 mr-1" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -173,9 +172,11 @@
                         <input type="checkbox" class="custom-control-input" id="demoCheck">
                         <label class="custom-control-label" for="demoCheck">Checkbox</label>
                     </div>
-                    <button class="btn btn-sm btn-primary ml-auto mr-2">
-                        <i class="fal fa-save"></i> Button 1
-                    </button>
+                    <x-button-dynamic-link url="#" title="Button 1" style="btn-primary ml-auto mr-2"
+                        iconClass="fas fa-save" />
+                    <x-button-dynamic-link url="#" title="Button 2" style="btn-primary mr-2"
+                        iconClass="fas fa-trash-alt" />
+
                     <button class="btn btn-sm btn-primary">
                         <i class="fal fa-trash-alt"></i> Button 2
                     </button>
@@ -210,23 +211,18 @@
             </x-slot>
             <x-slot name="panelcontentbar">
                 <div class="panel-content py-2 bg-faded border-faded border-top-0 border-left-0 border-right-0">
-                    <div class="btn-group mr-2" role="group" aria-label="Group A">
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i class="fas fa-bold"></i></button>
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i
-                                class="fas fa-italic"></i></button>
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i
-                                class="fas fa-underline"></i></button>
-                    </div>
-                    <div class="btn-group mr-2" role="group" aria-label="Group A">
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i
-                                class="fas fa-align-left"></i></button>
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i
-                                class="fas fa-align-center"></i></button>
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i
-                                class="fas fa-align-right"></i></button>
-                        <button type="button" class="btn btn-light btn-sm bg-white"><i
-                                class="fas fa-align-justify"></i></button>
-                    </div>
+                    <x-button-group :buttons="[['icon' => 'fas fa-bold'], ['icon' => 'fas fa-italic'], ['icon' => 'fas fa-underline']]" />
+                    <x-button-group :buttons="[
+                        ['icon' => 'fas fa-align-left'],
+                        ['icon' => 'fas fa-align-center'],
+                        ['icon' => 'fas fa-align-right'],
+                        ['icon' => 'fas fa-align-justify'],
+                    ]" />
+                    @php
+                        $dropdownItems = [['url' => '#', 'label' => 'Action'], ['url' => '#', 'label' => 'Another action'], ['url' => '#', 'label' => 'Something else here']];
+                    @endphp
+
+                    <x-button-dropdown buttonText="Dropdown button" :items="$dropdownItems" buttonType="primary" />
                 </div>
             </x-slot>
             <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
