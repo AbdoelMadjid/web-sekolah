@@ -22,24 +22,34 @@ use Illuminate\Support\Facades\Route;
 
 Route::fallback([ErrorController::class, 'index']);
 
+
 Route::get('/', [WebSiteSakolaController::class, 'index'])->name('web_sakola');
-Route::get('/sejarah', [WebSiteSakolaController::class, 'web_sejarah'])->name('sejarah');
-Route::get('/visi-misi', [WebSiteSakolaController::class, 'visimisi'])->name('visimisi');
-Route::get('/konsentrasi-keahlian', [WebSiteSakolaController::class, 'prodi'])->name('prodi');
-Route::get('/sarana-prasarana', [WebSiteSakolaController::class, 'sapras'])->name('sapras');
 
-Route::get('/tenaga-pendidik', [WebSiteSakolaController::class, 'guru'])->name('guru');
-Route::get('/tenaga-kependidikan', [WebSiteSakolaController::class, 'tatausaha'])->name('tatausaha');
-Route::get('/wakil-kepala-sekolah', [WebSiteSakolaController::class, 'wakasek'])->name('wakasek');
-Route::get('/ketua-program-studi', [WebSiteSakolaController::class, 'kaprodi'])->name('kaprodi');
-Route::get('/wali-kelas', [WebSiteSakolaController::class, 'walikelas'])->name('walikelas');
+Route::prefix('myschools')->group(function () {
+    Route::get('/sejarah', [WebSiteSakolaController::class, 'web_sejarah'])->name('sejarah');
+    Route::get('/visi-misi', [WebSiteSakolaController::class, 'visimisi'])->name('visimisi');
+    Route::get('/konsentrasi-keahlian', [WebSiteSakolaController::class, 'prodi'])->name('prodi');
+    Route::get('/sarana-prasarana', [WebSiteSakolaController::class, 'sapras'])->name('sapras');
+});
 
-Route::get('/osis', [WebSiteSakolaController::class, 'osis'])->name('osis');
-Route::get('/eskul', [WebSiteSakolaController::class, 'eskul'])->name('eskul');
+Route::prefix('kepegawaian')->group(function () {
+    Route::get('/tenaga-pendidik', [WebSiteSakolaController::class, 'guru'])->name('guru');
+    Route::get('/tenaga-kependidikan', [WebSiteSakolaController::class, 'tatausaha'])->name('tatausaha');
+    Route::get('/wakil-kepala-sekolah', [WebSiteSakolaController::class, 'wakasek'])->name('wakasek');
+    Route::get('/ketua-program-studi', [WebSiteSakolaController::class, 'kaprodi'])->name('kaprodi');
+    Route::get('/wali-kelas', [WebSiteSakolaController::class, 'walikelas'])->name('walikelas');
+});
 
-Route::get('/event', [WebSiteSakolaController::class, 'event'])->name('event');
-Route::get('/galery', [WebSiteSakolaController::class, 'galeri'])->name('galeri');
-Route::get('/go-blog', [WebSiteSakolaController::class, 'goblog'])->name('goblog');
+Route::prefix('kesiswaan')->group(function () {
+    Route::get('/osis', [WebSiteSakolaController::class, 'osis'])->name('osis');
+    Route::get('/eskul', [WebSiteSakolaController::class, 'eskul'])->name('eskul');
+});
+
+Route::prefix('repository')->group(function () {
+    Route::get('/event', [WebSiteSakolaController::class, 'event'])->name('event');
+    Route::get('/galery', [WebSiteSakolaController::class, 'galeri'])->name('galeri');
+    Route::get('/go-blog', [WebSiteSakolaController::class, 'goblog'])->name('goblog');
+});
 
 Route::get('/about-us', [WebSiteSakolaController::class, 'about'])->name('about');
 

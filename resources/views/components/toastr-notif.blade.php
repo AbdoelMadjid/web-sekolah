@@ -1,2 +1,2 @@
-<button class="btn btn-default btn-sm"
+<button class="btn btn-{{ $typebutton }} btn-sm"
     onclick="showToast('{{ $judul }}','{{ $message }}', '{{ $type }}')">{{ $slot }}</button>

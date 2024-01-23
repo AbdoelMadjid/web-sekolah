@@ -11,12 +11,14 @@ class ToastrNotif extends Component
     /**
      * Create a new component instance.
      */
+    public $typebutton;
     public $type;
     public $judul;
     public $message;
 
-    public function __construct($type = "", $judul = "", $message = "")
+    public function __construct($typebutton = "", $type = "", $judul = "", $message = "")
     {
+        $this->typebutton = $typebutton;
         $this->type = $type;
         switch ($type) {
             case 'warning':

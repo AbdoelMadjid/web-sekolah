@@ -23,35 +23,35 @@
                         <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
                             <a class="dropdown-toggle" href="#">My Schools</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/sejarah">Sejarah</a></li>
-                                <li><a href="/visi-misi">Visi Misi Tujuan</a></li>
-                                <li><a href="/konsentrasi-keahlian">Konsentrasi Keahlian</a></li>
-                                <li><a href="/sarana-prasarana">Sarana Prasarana</a></li>
+                                <li><a href="/myschools/sejarah">Sejarah</a></li>
+                                <li><a href="/myschools/visi-misi">Visi Misi Tujuan</a></li>
+                                <li><a href="/myschools/konsentrasi-keahlian">Konsentrasi Keahlian</a></li>
+                                <li><a href="/myschools/sarana-prasarana">Sarana Prasarana</a></li>
                             </ul>
                         </li>
                         <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
                             <a class="dropdown-toggle" href="#">Kepegawaian</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/tenaga-pendidik">Tenaga Pendidik</a></li>
-                                <li><a href="/tenaga-kependidikan">Tenaga Kependidikan</a></li>
-                                <li><a href="/wakil-kepala-sekolah">Wakil Kepala Sekolah</a></li>
-                                <li><a href="/ketua-program-studi">Ketua Program Studi</a></li>
-                                <li><a href="/wali-kelas">Wali Kelas</a></li>
+                                <li><a href="/kepegawaian/tenaga-pendidik">Tenaga Pendidik</a></li>
+                                <li><a href="/kepegawaian/tenaga-kependidikan">Tenaga Kependidikan</a></li>
+                                <li><a href="/kepegawaian/wakil-kepala-sekolah">Wakil Kepala Sekolah</a></li>
+                                <li><a href="/kepegawaian/ketua-program-studi">Ketua Program Studi</a></li>
+                                <li><a href="/kepegawaian/wali-kelas">Wali Kelas</a></li>
                             </ul>
                         </li>
                         <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
                             <a class="dropdown-toggle" href="#">Kesiswaan</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/osis">Organisasi Siswa Intra Sekolah</a></li>
-                                <li><a href="/eskul">Organisasi Ekstrakurikuler</a></li>
+                                <li><a href="/kesiswaan/osis">Organisasi Siswa Intra Sekolah</a></li>
+                                <li><a href="/kesiswaan/eskul">Organisasi Ekstrakurikuler</a></li>
                             </ul>
                         </li>
                         <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
                             <a class="dropdown-toggle" href="#">Repository</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/event">Event</a></li>
-                                <li><a href="/galery">Galery</a></li>
-                                <li><a href="/go-blog">Go Blog</a></li>
+                                <li><a href="/repository/event">Event</a></li>
+                                <li><a href="/repository/galery">Galery</a></li>
+                                <li><a href="/repository/go-blog">Go Blog</a></li>
                             </ul>
                         <li><a href="/about-us">About Us</a></li>
                     </ul>

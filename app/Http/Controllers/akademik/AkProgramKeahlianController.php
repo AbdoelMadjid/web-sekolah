@@ -14,7 +14,7 @@ class AkProgramKeahlianController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.akademik.program_keahlian.index');
     }
 
     /**
