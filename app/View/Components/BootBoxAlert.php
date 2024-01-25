@@ -11,21 +11,9 @@ class BootBoxAlert extends Component
     /**
      * Create a new component instance.
      */
-    public $typebutton;
-    public $id;
-    public $datatitle;
-    public $datamessage;
-    public $url;
-    public $icon;
-
-    public function __construct($typebutton = "", $id = "", $datatitle = "", $datamessage = "", $url = "", $icon = "")
+    public function __construct()
     {
-        $this->typebutton = $typebutton;
-        $this->id = $id;
-        $this->datatitle = $datatitle;
-        $this->datamessage = $datamessage;
-        $this->url = $url;
-        $this->icon = $icon;
+        //
     }
 
     /**

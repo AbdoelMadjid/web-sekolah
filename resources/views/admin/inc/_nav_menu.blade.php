@@ -17,6 +17,12 @@
             <span class="nav-link-text" data-i18n="nav.application_about">About</span>
         </a>
     </li>
+    <li class="{{ Request::is('landing_page') ? 'active' : '' }}">
+        <a href="/landingpage" title="Landing Page" data-filter-tags="application landing page">
+            <i class="fal fa-info-circle"></i>
+            <span class="nav-link-text" data-i18n="nav.application_landing_page">Landing Page</span>
+        </a>
+    </li>
 
     @include('admin.inc.mainmenu.admin._menu_admin')
     @include('admin.inc.mainmenu.admin._menu_akademik')

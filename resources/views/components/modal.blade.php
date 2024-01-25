@@ -1,5 +1,8 @@
+@props(['modalId', 'modalSize', 'modalTitle', 'modalSubTitle', 'modalAction', 'icon'])
+
+
 <div class="modal fade" id="{{ $modalId }}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog @isset($modalSubTitle){{ $modalSize }}@endisset" role="document">
+    <div class="modal-dialog @isset($modalSize){{ $modalSize }}@endisset" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">

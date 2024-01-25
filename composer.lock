@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "295871ddd192ba35e61a71d0ff6653f3",
+    "content-hash": "25f0cb9c7c38c2714ab86ac3ab47d4c4",
     "packages": [
         {
             "name": "brick/math",
@@ -1954,6 +1954,106 @@
                 }
             ],
             "time": "2023-10-17T14:13:20+00:00"
+        },
+        {
+            "name": "lodev09/bootstrap-php",
+            "version": "1.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lodev09/bootstrap-php.git",
+                "reference": "2d423bb94777195bbd00b7c23d29aea5c9f13927"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lodev09/bootstrap-php/zipball/2d423bb94777195bbd00b7c23d29aea5c9f13927",
+                "reference": "2d423bb94777195bbd00b7c23d29aea5c9f13927",
+                "shasum": ""
+            },
+            "require": {
+                "lodev09/php-util": ">=1.2",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bootstrap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jovanni Lo",
+                    "email": "lodev09@gmail.com"
+                }
+            ],
+            "description": "A highly extendable PHP library that generate and prints html for bootstrap.",
+            "homepage": "https://github.com/lodev09/bootstrap-php",
+            "keywords": [
+                "bootstrap",
+                "bootstrap-php",
+                "bootstrap-php-library",
+                "class",
+                "framework",
+                "html",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/lodev09/bootstrap-php/issues",
+                "source": "https://github.com/lodev09/bootstrap-php/tree/1.1.13"
+            },
+            "time": "2021-03-08T19:09:50+00:00"
+        },
+        {
+            "name": "lodev09/php-util",
+            "version": "2.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lodev09/php-util.git",
+                "reference": "9d90849229f73cc93c3df2bc2bc1b3268f976848"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lodev09/php-util/zipball/9d90849229f73cc93c3df2bc2bc1b3268f976848",
+                "reference": "9d90849229f73cc93c3df2bc2bc1b3268f976848",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "ralouphie/getallheaders": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jovanni Lo",
+                    "email": "lodev09@gmail.com"
+                }
+            ],
+            "description": "Collection of methods that I or you usually use.",
+            "homepage": "https://github.com/lodev09/php-util",
+            "keywords": [
+                "class",
+                "common-util",
+                "methods",
+                "php",
+                "util"
+            ],
+            "support": {
+                "issues": "https://github.com/lodev09/php-util/issues",
+                "source": "https://github.com/lodev09/php-util/tree/2.0.14"
+            },
+            "time": "2022-03-09T18:04:24+00:00"
         },
         {
             "name": "monolog/monolog",
