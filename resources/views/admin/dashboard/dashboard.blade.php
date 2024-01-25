@@ -136,6 +136,12 @@
                                         <button type="button" class="btn btn-default" data-toggle="modal"
                                             data-target="#default-example-modal-lg">Large</button>
                                     </div>
+                                    <!-- Examples of using the button component -->
+                                    <x-button color="primary" size="sm" text="Small Primary Button"
+                                        type="submit" />
+                                    <x-button color="secondary" size="md" text="Medium Secondary Button" outline />
+                                    <x-button color="warning" size="lg" text="Large Warning Button" />
+
                                 </td>
                             </tr>
                         </tbody>
