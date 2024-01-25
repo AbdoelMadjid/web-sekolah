@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25f0cb9c7c38c2714ab86ac3ab47d4c4",
+    "content-hash": "8180a4bcde94f2d7c545542ad0b62d16",
     "packages": [
         {
             "name": "brick/math",
@@ -5602,6 +5602,55 @@
                 }
             ],
             "time": "2023-12-28T19:16:56+00:00"
+        },
+        {
+            "name": "tdkomplekt/laravel-bootstrap-components",
+            "version": "1.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tdkomplekt/laravel-bootstrap-components.git",
+                "reference": "d5ed64ea0fb9572dc26692c5168b23cbfbcff05e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tdkomplekt/laravel-bootstrap-components/zipball/d5ed64ea0fb9572dc26692c5168b23cbfbcff05e",
+                "reference": "d5ed64ea0fb9572dc26692c5168b23cbfbcff05e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tdkomplekt\\LaravelBootstrapComponents\\Providers\\LaravelBootstrapComponentsProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tdkomplekt\\LaravelBootstrapComponents\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Yanushkevich",
+                    "email": "d.yanushkevich@tools.by",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Bootstrap Blade Components",
+            "homepage": "https://github.com/tdkomplekt/laravel-bootstrap-components",
+            "support": {
+                "issues": "https://github.com/tdkomplekt/laravel-bootstrap-components/issues",
+                "source": "https://github.com/tdkomplekt/laravel-bootstrap-components/tree/1.1.11"
+            },
+            "time": "2024-01-17T09:01:09+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

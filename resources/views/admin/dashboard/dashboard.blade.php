@@ -66,9 +66,14 @@
                     <x-button-dropdown buttonText="Dropdown button" :items="$dropdownItems" buttonType="primary" />
                 </div>
             </x-slot>
+
             <div class="row">
                 <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
-                    <!-- Panggil komponen Alert untuk pesan warning -->
+                    <x-icon name="bars" />
+                    <x-icon name="users" size="lg" color="danger" />
+                    <br><br>
+                    <x-progress :label="__('25% Complete')" percent="25" color="success" height="20" animated striped />
+                    <br><br>
                     <x-alert type="warning" title="Warning">
                         Custom alert background with <strong>medium</strong> sized icon stack.
                     </x-alert>
