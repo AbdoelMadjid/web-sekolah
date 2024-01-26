@@ -5,6 +5,12 @@
         <span class="nav-link-text" data-i18n="nav.tools_app">Tools App</span>
     </a>
     <ul>
+        <li class="{{ Request::is('/') ? 'active' : '' }}">
+            <a href="/" title="Web Dashboard" data-filter-tags="web dashboard">
+                <i class="fal fa-globe"></i>
+                <span class="nav-link-text" data-i18n="nav.web_dashboard_web">Dashboard Web</span>
+            </a>
+        </li>
         <li class="{{ Request::is('tools/tools-profil-aplikasi') ? 'active' : '' }}">
             <a href="/tools/tools-profil-aplikasi" title="Profil Aplikasi" data-filter-tags="tools profil aplikasi">
                 <span class="nav-link-text" data-i18n="nav.tools_profil_aplikasi">Profil Aplikasi</span>

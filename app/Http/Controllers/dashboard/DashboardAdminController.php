@@ -17,6 +17,10 @@ class DashboardAdminController extends Controller
     }
     public function landing()
     {
-        return view('admin.dashboard.landing_page');
+        return view('admin.dashboard.dev_landing_page');
+    }
+    public function component()
+    {
+        return view('admin.dashboard.dev_component');
     }
 }

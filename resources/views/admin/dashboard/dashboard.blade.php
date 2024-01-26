@@ -69,88 +69,108 @@
 
             <div class="row">
                 <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
-                    <x-icon name="bars" />
-                    <x-icon name="users" size="lg" color="danger" />
-                    <br><br>
-                    <x-progress :label="__('25% Complete')" percent="25" color="success" height="20" animated striped />
-                    <br><br>
-                    <x-alert type="warning" title="Warning">
-                        Custom alert background with <strong>medium</strong> sized icon stack.
-                    </x-alert>
-                    <x-alert type="info" title="Info">
-                        Custom alert background with <strong>medium</strong> sized icon stack.
-                    </x-alert>
-                    <x-alert type="danger" title="Error">
-                        Custom alert background with <strong>medium</strong> sized icon stack.
-                    </x-alert>
-                    <x-alert type="success" title="Success">
-                        Custom alert background with <strong>medium</strong> sized icon stack.
-                    </x-alert>
+                    <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
+                        <h3 class="mb-g">
+                            Hi Everyone,
+                        </h3>
+                        <x-alert color="warning" title="Warning">
+                            Custom alert background with <strong>medium</strong> sized icon stack.
+                        </x-alert>
+                        <x-alert color="info" title="Info">
+                            Custom alert background with <strong>medium</strong> sized icon stack.
+                        </x-alert>
+                        <x-alert color="danger" title="Error">
+                            Custom alert background with <strong>medium</strong> sized icon stack.
+                        </x-alert>
+                        <x-alert color="success" title="Success" dismissible>
+                            Custom alert background with <strong>medium</strong> sized icon stack.
+                        </x-alert>
+                    </div>
                 </div>
                 <div class="col-lg-12 col-xl-6 order-lg-3 order-xl-2">
-                    <table class="table table-bordered table-hover">
-                        <tbody>
-                            <tr>
-                                <td style="width: 40%; vertical-align: middle;">
-                                    <span
-                                        class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">1</span>
-                                    Basic Alert Toast
-                                </td>
-                                <td>
-                                    <div class="btn-group mr-2" role="group" aria-label="Group A">
-                                        <x-toastr-notif typebutton="warning" type="warning"
-                                            message="Terjadi Kesalahan">Warning</x-toastr-notif>
-                                        <x-toastr-notif typebutton="danger" type="error"
-                                            message="Lengkapi data yang kosong">Error</x-toastr-notif>
-                                        <x-toastr-notif typebutton="info" type="info"
-                                            message="Data yang di lengkapi sudah sesuai">Info</x-toastr-notif>
-                                        <x-toastr-notif typebutton="success" type="success"
-                                            message="Data sukses di simpan">Success</x-toastr-notif>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 40%; vertical-align: middle;">
-                                    <span
-                                        class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">2</span>
-                                    Basic Alert BootBox
-                                </td>
-                                <td>
-                                    <x-bootboxalert typebutton="primary" datatitle="Tambah Data Siswa"
-                                        datamessage="Sukses tersimpan!" url="dashboard-admin"
-                                        icon="save">Simpan</x-bootboxalert>
-                                    <x-bootboxalert id="ya-atau-tidak" typebutton="primary" datatitle="Konfirmasi"
-                                        datamessage="Apakah Anda yakin data ini akan dihapus?" url="dashboard-admin"
-                                        icon="trash-alt">Hapus</x-bootboxalert>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 40%; vertical-align: middle;">
-                                    <span
-                                        class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">3</span>
-                                    Modal Component
-                                </td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Group A">
-                                        <button type="button" class="btn btn-default" data-toggle="modal"
-                                            data-target="#default-example-modal-sm">Small</button>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-default" data-toggle="modal"
-                                            data-target="#default-example-modal">Default</button>
-                                        <!-- Large modal -->
-                                        <button type="button" class="btn btn-default" data-toggle="modal"
-                                            data-target="#default-example-modal-lg">Large</button>
-                                    </div>
-                                    <!-- Examples of using the button component -->
-                                    <x-button color="primary" size="sm" text="Small Primary Button"
-                                        type="submit" />
-                                    <x-button color="secondary" size="md" text="Medium Secondary Button" outline />
-                                    <x-button color="warning" size="lg" text="Large Warning Button" />
+                    <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
+                        <h3 class="mb-g">
+                            Component Style Button
+                        </h3>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 40%; vertical-align: middle;">
+                                        <span
+                                            class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">1</span>
+                                        Basic Alert Toast
+                                    </td>
+                                    <td>
+                                        <div class="btn-group mr-2" role="group" aria-label="Group A">
+                                            <x-toastr-notif typebutton="warning" type="warning"
+                                                message="Terjadi Kesalahan">Warning</x-toastr-notif>
+                                            <x-toastr-notif typebutton="danger" type="error"
+                                                message="Lengkapi data yang kosong">Error</x-toastr-notif>
+                                            <x-toastr-notif typebutton="info" type="info"
+                                                message="Data yang di lengkapi sudah sesuai">Info</x-toastr-notif>
+                                            <x-toastr-notif typebutton="success" type="success"
+                                                message="Data sukses di simpan">Success</x-toastr-notif>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%; vertical-align: middle;">
+                                        <span
+                                            class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">2</span>
+                                        Basic Alert BootBox
+                                    </td>
+                                    <td>
+                                        <x-bootboxalert typebutton="primary" datatitle="Tambah Data Siswa"
+                                            datamessage="Sukses tersimpan!" url="dashboard-admin"
+                                            icon="save">Simpan</x-bootboxalert>
+                                        <x-bootboxalert id="ya-atau-tidak" typebutton="primary" datatitle="Konfirmasi"
+                                            datamessage="Apakah Anda yakin data ini akan dihapus?" url="dashboard-admin"
+                                            icon="trash-alt">Hapus</x-bootboxalert>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%; vertical-align: middle;">
+                                        <span
+                                            class="d-inline-flex border border-primary text-primary width-1 height-1 rounded-circle fw-500 mr-2 align-items-center justify-content-center">3</span>
+                                        Modal Component
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Group A">
+                                            <button type="button" class="btn btn-default" data-toggle="modal"
+                                                data-target="#default-example-modal-sm">Small</button>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-default" data-toggle="modal"
+                                                data-target="#default-example-modal">Default</button>
+                                            <!-- Large modal -->
+                                            <button type="button" class="btn btn-default" data-toggle="modal"
+                                                data-target="#default-example-modal-lg">Large</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
+                        <h3 class="mb-g">
+                            Component Style Button
+                        </h3>
+                        <x-icon name="bars" />
+                        <x-icon name="users" size="lg" color="danger" />
+                        <br><br>
+                        <x-progress :label="__('25% Complete')" percent="25" color="success" height="20" animated striped />
+                        <br><br>
+                        <!-- Examples of using the button component -->
+                        <x-button color="primary" size="sm" text="Small Primary Button" type="submit" />
+                        <x-button color="secondary" size="md" text="Medium Secondary Button" outline />
+                        <x-button color="warning" size="lg" text="Large Warning Button" />
 
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                        <x-tombol icon="save" label="Click me" color="success" size="md" href="dashboard-admin"
+                            toggle="tooltip" outline />
+                        <x-tombol icon="save" label="Simpan" color="primary" size="sm" href="dashboard-admin"
+                            toggle="tooltip" />
+                    </div>
+                    {{-- tampilan modal --}}
 
                     <x-modal :modalId="'default-example-modal'" :modalSize="''" :modalTitle="'Ini Modal default'" :modalSubTitle="'Contoh Modal default'" :modalAction="'Simpan'">
                         <!-- Isi konten modal yang dinamis -->

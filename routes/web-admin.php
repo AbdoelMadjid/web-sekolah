@@ -85,8 +85,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard-admin', [DashboardAdminController::class, 'index'])->name('dashboard_admin');
 Route::get('/about', [DashboardAdminController::class, 'about'])->name('about');
-Route::get('/landingpage', [DashboardAdminController::class, 'landing'])->name('landingpage');
+Route::get('/dev_landingpage', [DashboardAdminController::class, 'landing'])->name('landingpage');
+Route::get('/dev_component', [DashboardAdminController::class, 'component'])->name('component');
+
+
 Route::get('/bp-bk', [BimbinganKarirController::class, 'index'])->name('bpbk');
+
 
 //akademik
 Route::prefix('akademik')->group(function () {

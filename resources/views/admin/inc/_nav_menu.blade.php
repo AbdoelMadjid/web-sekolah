@@ -5,25 +5,31 @@
             <span class="nav-link-text" data-i18n="nav.application_dashboard">Dashboard</span>
         </a>
     </li>
-    <li class="{{ Request::is('/') ? 'active' : '' }}">
-        <a href="/" title="Web Dashboard" data-filter-tags="web dashboard">
-            <i class="fal fa-globe"></i>
-            <span class="nav-link-text" data-i18n="nav.web_dashboard_web">Dashboard Web</span>
+    <li class="{{ Request::is('dev_*') ? 'active open' : '' }}">
+        <a href="#" title="Depelover" data-filter-tags="develpoer">
+            <i class="fal fa-cog"></i>
+            <span class="nav-link-text" data-i18n="nav.depelover">Depelover</span>
         </a>
-    </li>
+        <ul>
+            <li class="{{ Request::is('dev_component') ? 'active' : '' }}">
+                <a href="/dev_component" title="Component" data-filter-tags="application component">
+                    <i class="fal fa-microscope"></i>
+                    <span class="nav-link-text" data-i18n="nav.application_component">Component</span>
+                </a>
+            </li>
+            <li class="{{ Request::is('/dev_landing_page') ? 'active' : '' }}">
+                <a href="/dev_landingpage" title="Landing Page" data-filter-tags="application landing page">
+                    <i class="fal fa-car-bump"></i>
+                    <span class="nav-link-text" data-i18n="nav.application_landing_page">Landing Page</span>
+                </a>
+            </li>
+        </ul>
     <li class="{{ Request::is('about') ? 'active' : '' }}">
         <a href="/about" title="About" data-filter-tags="application about">
             <i class="fal fa-info-circle"></i>
             <span class="nav-link-text" data-i18n="nav.application_about">About</span>
         </a>
     </li>
-    <li class="{{ Request::is('landing_page') ? 'active' : '' }}">
-        <a href="/landingpage" title="Landing Page" data-filter-tags="application landing page">
-            <i class="fal fa-info-circle"></i>
-            <span class="nav-link-text" data-i18n="nav.application_landing_page">Landing Page</span>
-        </a>
-    </li>
-
     @include('admin.inc.mainmenu.admin._menu_admin')
     @include('admin.inc.mainmenu.admin._menu_akademik')
     @include('admin.inc.mainmenu.admin._menu_kegiatan_kbm')
